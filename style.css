@@ -11,7 +11,7 @@ body{
     display: flex;
     justify-content: center;
     align-items: center;
-    background-image: url(./images/papersq.jpg);
+    background-image: url(./R.jpg);
     background-size: cover;
     flex-direction: column;
 }
@@ -38,11 +38,6 @@ h1{
     font-family: 'Pacifico', cursive;
     font-size: 2.5rem;
     margin-bottom: 20px;
-}
-
-#not{
-    font-size: 2rem;
-    text-align: center;
 }
 
 #inputarea{
@@ -73,6 +68,7 @@ h1{
     border-radius: 30px;
     font-size: 1.4rem;
     cursor: pointer;
+    
 }
 #clear{
     width: 300px;
@@ -119,11 +115,11 @@ h1{
     opacity: 0.4;
 }
 
-/* .container_down{
+.container_down{
     margin: auto;
-} */
+}
 
-.sil{
+.delete{
     font-size: 1.5rem;
     background-color: transparent;
     border: none;
@@ -141,10 +137,6 @@ h1{
     h1{
         font-size: 2rem;
         margin-bottom: 10px;
-    }
-    
-    #not{
-        font-size: 1.5rem;
     }
  
     #input{
@@ -178,10 +170,6 @@ h1{
     h1{
         font-size: 1.5rem;
         margin-bottom: 10px;
-    }
-    
-    #not{
-        font-size: 1.5rem;
     }
  
     #input{

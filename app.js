@@ -1,14 +1,14 @@
 let input = document.querySelector('#input');
 let add = document.querySelector('#add');
 let clearAll = document.querySelector('#clear');
-let todoAll = document.querySelector('#todo-section');
+// let todoAll = document.querySelector('#todo-section');
 
 add.onclick = function(){
     if(!input.value){
         alert('Enter a task please')
     } else{
         
-        let tasktodo = document.createElement('div');
+        // let tasktodo = document.createElement('div');
         tasktodo.classList.add('tasktodo');
         todoAll.append(tasktodo);
 
@@ -21,7 +21,7 @@ add.onclick = function(){
         cb.type = 'checkbox';
         left.appendChild(cb);
 
-        let tasktext = document.createElement('p');
+        // let tasktext = document.createElement('p');
         tasktext.classList.add('tasktext');
         left.appendChild(tasktext);
         tasktext.innerText = input.value;
@@ -30,8 +30,8 @@ add.onclick = function(){
         right.classList.add('right');
         tasktodo.appendChild(right);
 
-        let icon = document.createElement('button');
-        icon.classList.add('sil');
+        // let icon = document.createElement('button');
+        icon.classList.add('delete');
         icon.innerText= "❌";
         right.appendChild(icon);
 
@@ -42,7 +42,7 @@ add.onclick = function(){
         })
 
         clearAll.addEventListener('click', ()=>{
-            document.querySelector('.container_up').removeChild(todoAll)
+            // document.querySelector('.container_up').removeChild(todoAll)
             location.reload()
         })
 
